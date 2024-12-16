@@ -1,17 +1,17 @@
 require('dotenv').config(); // Load environment variables
 
 module.exports = {
-    prefix: process.env.PREFIX || '.', // Command prefix
+    prefix: process.env.PREFIX || '+', // Command prefix
     ownerName: process.env.OWNER_NAME || 'Toxxic', // Owner name
-    ownerNumber: process.env.OWNER_NUMBER || '2348165846414', // Your WhatsApp number
+    ownerNumber: process.env.OWNER_NUMBER || '919064560840', // Your WhatsApp number
     mode: process.env.MODE || 'private', // Bot mode: 'public' or 'private'
     region: process.env.REGION || 'Nigeria', // Region
     botName: process.env.BOT_NAME || 'Rias Gremory V3', // Bot name
     exifPack: process.env.EXIF_PACK || 'RIAS V3 LOVES', // Sticker pack name
     exifAuthor: process.env.EXIF_AUTHOR || 'Toxxic', // Author of the sticker pack
     timeZone: process.env.TIME_ZONE || 'Africa/Lagos', // Time zone
-    presenceStatus: process.env.PRESENCE_STATUS || 'recording', // Bot presence status
-    autoRead: process.env.AUTO_READ === 'true', // Auto-read messages (true or false)
+    presenceStatus: process.env.PRESENCE_STATUS || 'null', // Bot presence status
+    autoRead: process.env.AUTO_READ === 'false', // Auto-read messages (true or false)
     autoViewStatus: process.env.AUTO_VIEW_STATUS === 'true', // Auto-view statuses (true or false)
-    sessionId: process.env.SESSION_ID || '', // WhatsApp session ID
+    sessionId: process.env.SESSION_ID || 'eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiZVBJQzEyTDBLWVk0TGt1RVBNbWZYODVXL25rRlBGQnpvQzJHb3NHb1dsRT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiL25xVitGZ3NYZ1ZIbXp3Mm9wVWdnbW1DRnhrQVNWN0ZIOC9wRk9DNklEND0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJFTEZIemhIanI1ZWt2MmI0T0NtSExDSU9GQWlpc2JvOUJXMVVjOFVoNlhRPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiI3VHhhZ043RUVFR2RTQlMvc0l2UjE3aEgvUkI4eVE0YXFWL1Vtdi9RdFRZPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IjhDVmN0UURFd25tQUxQdHhjTldMQlpyRGlWSFZFK0kvRVZzNVI4Mll1VUk9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6ImxoZWE3N2R0TDdOWkhaWUNjOUdzaHJudWpOSzdGK3VldmVHN1J6RkplU3M9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiMkE3MjBYa3dlRHRkM0R3UWxwZm9taHgrb1ovbDhEd1pnMXQxeXFKRWcyST0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiVnBsbFR6VDRuT0FhOThwTDZSMFB3dFNnc1BzYnV5S1VnSXUxd2x0WDNGWT0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IlBXS2RBWm1Oa29GSkVXUjU2NktMd1ZtWVJ3N2k2SDJrckFRT2lDd09qTEhDNmZ0NEZadmJaYTZBNktUb3lzRkViT2YyekVML2Q2czhrRlpGK08vU0JRPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6NCwiYWR2U2VjcmV0S2V5IjoiNlBVTFVBZHNER3BaSlUvK3FoQlZ1ZVArNmdxbTVLWEh2YjhtM0taR29Idz0iLCJwcm9jZXNzZWRIaXN0b3J5TWVzc2FnZXMiOltdLCJuZXh0UHJlS2V5SWQiOjMxLCJmaXJzdFVudXBsb2FkZWRQcmVLZXlJZCI6MzEsImFjY291bnRTeW5jQ291bnRlciI6MCwiYWNjb3VudFNldHRpbmdzIjp7InVuYXJjaGl2ZUNoYXRzIjpmYWxzZX0sImRldmljZUlkIjoiNEVIYV9ZX0NTYUNzMjJEUE5NWmh2dyIsInBob25lSWQiOiIwMDdmMDJjOC1jYTYwLTQ1NzgtOGNlMi03ODg0ZTk2NTQ4ZmYiLCJpZGVudGl0eUlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoicTd6MExXUEpka1JTeWpKUjZqSm1iT2x5eHVNPSJ9LCJyZWdpc3RlcmVkIjp0cnVlLCJiYWNrdXBUb2tlbiI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IjRtaHczekJia1VkZ0tXY1NXV2tIVVVrbzhaND0ifSwicmVnaXN0cmF0aW9uIjp7fSwicGFpcmluZ0NvZGUiOiJKN0tXRFJRNSIsIm1lIjp7ImlkIjoiOTE5MDY0NTYwODQwOjc5QHMud2hhdHNhcHAubmV0IiwibmFtZSI6IvCQjIDThOqNj+C4o8qc4oam4oam4oam4oam4oamIn0sImFjY291bnQiOnsiZGV0YWlscyI6IkNQL21xNW9DRVBtTGdyc0dHQWdnQUNnQSIsImFjY291bnRTaWduYXR1cmVLZXkiOiJ1a25QU004MHZTTmswbnlDeFJRM25Wa2ZaYjVxcDhvaVZUNWN4TW5yTlFVPSIsImFjY291bnRTaWduYXR1cmUiOiJvejFRSEt1ZzJaN2haNDJET21tSGRadm1oUkJGcjlsYmUzbHVYcXVNU1RIV2tpcmNER3kreUZrbURVT2dSMkNWWms1b3FhTEVEMm5scURTSk5TM3VCZz09IiwiZGV2aWNlU2lnbmF0dXJlIjoibUpvSW9PdEdKeXVZRHd6Z1FFTC9HY0hIeGl0emsyUW55eGl4VXh3RWtyazAwR0VJakpuMGtGNVpHeFZ3NTduOGdEanJGWGQ0RW5MeU9VSTB0T1NKQ3c9PSJ9LCJzaWduYWxJZGVudGl0aWVzIjpbeyJpZGVudGlmaWVyIjp7Im5hbWUiOiI5MTkwNjQ1NjA4NDA6NzlAcy53aGF0c2FwcC5uZXQiLCJkZXZpY2VJZCI6MH0sImlkZW50aWZpZXJLZXkiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJCYnBKejBqUE5MMGpaTko4Z3NVVU41MVpIMlcrYXFmS0lsVStYTVRKNnpVRiJ9fV0sInBsYXRmb3JtIjoic21iYSIsImxhc3RBY2NvdW50U3luY1RpbWVzdGFtcCI6MTczNDM3OTAxNCwibXlBcHBTdGF0ZUtleUlkIjoiQUFBQUFEQUkifQ==', // WhatsApp session ID
 };
